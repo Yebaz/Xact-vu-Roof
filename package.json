@@ -4,6 +4,7 @@
   "private": true,
   "description": "Static single-page landing for Xact-Vu Construction.",
   "scripts": {
-    "dev": "npx --yes http-server . -p 5173 -c-1"
+    "dev": "npx --yes http-server . -p 5173 -c-1",
+    "stop": "powershell -NoProfile -Command \"Get-NetTCPConnection -LocalPort 5173 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }\""
   }
 }
