@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agenda una Visita de Inspección Pro gratis para tu techo en Edmonton con drone, termografía FLIR y reporte PDF de 30 puntos.">
+  <meta name="theme-color" content="#0F2A4A">
+  <title>Xact-Vu Construction | Visita de Inspección Pro Gratis en Edmonton</title>
+
+  <!-- GOOGLE FONTS: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- TAILWIND CSS CDN: sin build process -->
+  <script>
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0F2A4A',
+            action: '#FF6B35',
+            success: '#22A06B',
+            warning: '#F59E0B',
+            charcoal: '#1F2937',
+            soft: '#F8F9FA'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            premium: '0 18px 50px rgba(15, 42, 74, 0.12)',
+            soft: '0 10px 30px rgba(15, 42, 74, 0.08)'
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- META PIXEL: REEMPLAZAR 'TU_PIXEL_ID' CON TU ID REAL -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'TU_PIXEL_ID');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=TU_PIXEL_ID&ev=PageView&noscript=1">
+  </noscript>
+
+  <style>
+    :root {
+      --navy: #0F2A4A;
+      --action: #FF6B35;
+      --success: #22A06B;
+      --warning: #F59E0B;
+      --charcoal: #1F2937;
+      --soft: #F8F9FA;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--charcoal);
+      background: #fff;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero-bg {
+      background-image:
+        línear-gradient(90deg, rgba(15, 42, 74, 0.92) 0%, rgba(15, 42, 74, 0.76) 46%, rgba(15, 42, 74, 0.46) 100%),
+        url('assets/hero-aerial-roof-edmonton.webp');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header-blur {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+    }
+
+    .cta-shadow {
+      box-shadow: 0 14px 30px rgba(255, 107, 53, 0.28);
+    }
+
+    .animate-availability {
+      animation: availabilityPulse 2.2s ease-in-out infinite;
+    }
+
+    @keyframes availabilityPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(34, 160, 107, 0.32); }
+      50% { box-shadow: 0 0 0 8px rgba(34, 160, 107, 0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 640ms ease, transform 640ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .focus-ring:focus-visible {
+      outline: 3px solid rgba(255, 107, 53, 0.5);
+      outline-offset: 3px;
+    }
+
+    .faq-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 260ms ease;
+    }
+
+    .faq-item[data-open="true"] .faq-panel {
+      max-height: 220px;
+    }
+
+    .faq-item[data-open="true"] .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .mobile-card-label {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      .hero-bg {
+        background-image:
+          línear-gradient(180deg, rgba(15, 42, 74, 0.96) 0%, rgba(15, 42, 74, 0.82) 54%, rgba(15, 42, 74, 0.64) 100%),
+          url('assets/hero-aerial-roof-edmonton.webp');
+        background-position: center top;
+      }
+
+      .heat-table thead {
+        display: none;
+      }
+
+      .heat-table,
+      .heat-table tbody,
+      .heat-table tr,
+      .heat-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .heat-table tr {
+        margin-bottom: 12px;
+        border: 1px solid #E5E7EB;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(15, 42, 74, 0.06);
+        overflow: hidden;
+      }
+
+      .heat-table td {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 12px 16px;
+        border-bottom: 1px solid #F3F4F6;
+      }
+
+      .heat-table td:last-child {
+        border-bottom: 0;
+      }
+
+      .mobile-card-label {
+        display: inline;
+        color: #6B7280;
+        font-weight: 600;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+  <!-- EDITAR CONTENIDO: teléfono global, disponibilidad y datos de contacto -->
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 header-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#top" class="focus-ring flex min-h-11 items-center gap-2 rounded-md" aria-label="Ir al inicio">
+        <span class="flex h-10 w-10 items-center justify-center rounded-md bg-navy text-sm font-extrabold text-white">XV</span>
+        <span class="leading-tight">
+          <span class="block text-lg font-extrabold tracking-tight text-navy">XACT-VU</span>
+          <span class="hidden text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 sm:block">Construction</span>
+        </span>
+      </a>
+
+      <div class="flex items-center gap-2 sm:gap-4">
+        <span class="animate-availability hidden rounded-full border border-success/20 bg-success/10 px-3 py-2 text-xs font-bold text-success sm:inline-flex">
+          5 visitas disponibles esta semana
+        </span>
+        <a href="tel:+17800000000" data-phone-link class="focus-ring inline-flex min-h-11 items-center justify-center rounded-md border border-navy/15 px-3 text-sm font-extrabold text-navy transition hover:bg-navy hover:text-white">
+          (780) 000-0000
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO SECTION -->
+    <section class="hero-bg relative min-h-[calc(100vh-70px)] overflow-hidden text-white">
+      <!-- IMAGEN: drone aéreo de techo terminado en Edmonton, 1920x1080, WebP -->
+      <div class="mx-auto flex min-h-[calc(100vh-70px)] max-w-7xl items-center px-4 py-14 pb-24 sm:px-6 lg:px-8">
+        <div class="max-w-3xl reveal">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/12 px-4 py-2 text-sm font-bold text-white shadow-sm backdrop-blur">
+            <span class="h-2 w-2 rounded-full bg-success"></span>
+            Inspección Pro valorada en $797, gratis esta semana
+          </div>
+
+          <h1 class="text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+            Tu Techo Te Está Costando Hasta $1,800 al Año. Te Lo Medimos GRATIS.
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl">
+            Inspección profesional con drone + termografía FLIR. El mismo equipo que reemplazó el techo de Shepherd's Care Foundation en 4 días.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#agendar" class="focus-ring inline-flex min-h-14 items-center justify-center rounded-md bg-action px-6 text-base font-extrabold text-white transition duration-200 hover:scale-[1.02] hover:bg-[#e95d2d] cta-shadow">
+              Agendar Mi Visita Gratis
+            </a>
+            <a href="tel:+17800000000" data-phone-link class="focus-ring inline-flex min-h-14 items-center justify-center rounded-md border border-white/35 bg-white/10 px-6 text-base font-extrabold text-white transition duration-200 hover:scale-[1.02] hover:bg-white hover:text-navy">
+              Llamar Ahora
+            </a>
+          </div>
+
+          <div class="mt-7 grid gap-2 text-xs font-extrabold uppercase tracking-[0.14em] text-white/86 sm:grid-cols-2 lg:grid-cols-4">
+            <span class="rounded-md border border-white/15 bg-white/10 px-3 py-3 text-center backdrop-blur">15+ años</span>
+            <span class="rounded-md border border-white/15 bg-white/10 px-3 py-3 text-center backdrop-blur">Garantía 1 año</span>
+            <span class="rounded-md border border-white/15 bg-white/10 px-3 py-3 text-center backdrop-blur">Financiamiento hasta $110K</span>
+            <span class="rounded-md border border-white/15 bg-white/10 px-3 py-3 text-center backdrop-blur">Valor $797 gratis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- URGENCY BAR -->
+    <section class="border-y border-warning/25 bg-warning/12">
+      <div class="mx-auto max-w-7xl px-4 py-4 text-center sm:px-6 lg:px-8">
+        <p class="text-sm font-extrabold text-navy sm:text-base">
+          <span aria-hidden="true">⏰</span> Solo 5 visitas de inspección disponibles esta semana. Cierra cupos al llegar a 5.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-action">El problema escondido</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+            Tu Techo Viejo Te Está Sangrando el Bolsillo. Y Tú No Lo Sabes.
+          </h2>
+        </div>
+
+        <div class="mt-11 grid gap-5 md:grid-cols-3">
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-md bg-action/10 text-2xl" aria-hidden="true">💰</div>
+            <h3 class="text-xl font-extrabold text-navy">$60-$180/mes</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Un techo deteriorado deja escapar calor cada noche. La factura sube en silencio, especialmente durante los inviernos largos de Edmonton.
+            </p>
+          </article>
+
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-md bg-warning/12 text-2xl" aria-hidden="true">⚡</div>
+            <h3 class="text-xl font-extrabold text-navy">Grieta de $500 hoy</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              El daño menor se convierte en humedad, madera comprometida, aislamiento arruinado y reparaciónes que ya no se pueden aplazar.
+            </p>
+          </article>
+
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-md bg-navy/10 text-2xl" aria-hidden="true">❄️</div>
+            <h3 class="text-xl font-extrabold text-navy">120 ciclos de hielo/año</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Cada congelamiento y deshielo abre más espacio para filtraciones. Ningun ciclo perdona una teja levantada o una junta vulnerable.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEAT LOSS TABLE SECTION -->
+    <section class="bg-soft py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+            ¿Cuánto Te Está Costando TU Techo?
+          </h2>
+          <p class="mt-4 text-lg leading-8 text-slate-600">
+            La Visita de Inspección Pro calcula tu pérdida estimada con datos reales de tu propiedad.
+          </p>
+        </div>
+
+        <div class="mt-10 overflow-hidden md:rounded-lg md:border md:border-slate-200 md:bg-white md:shadow-premium reveal">
+          <table class="heat-table w-full text-left">
+            <thead class="bg-navy text-white">
+              <tr>
+                <th class="px-6 py-4 text-sm font-extrabold uppercase tracking-[0.14em]">Estado del Techo</th>
+                <th class="px-6 py-4 text-sm font-extrabold uppercase tracking-[0.14em]">Edad</th>
+                <th class="px-6 py-4 text-sm font-extrabold uppercase tracking-[0.14em]">Costo Extra/Mes</th>
+                <th class="px-6 py-4 text-sm font-extrabold uppercase tracking-[0.14em]">Costo/Año</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="px-6 py-5 font-extrabold text-navy"><span class="mobile-card-label">Estado</span><span>🟢 Óptimo</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Edad</span><span>0-5 años</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Mes</span><span>$0</span></td>
+                <td class="px-6 py-5 font-bold"><span class="mobile-card-label">Año</span><span>$0</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-5 font-extrabold text-navy"><span class="mobile-card-label">Estado</span><span>🟢 Bueno</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Edad</span><span>5-10 años</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Mes</span><span>$15-30</span></td>
+                <td class="px-6 py-5 font-bold"><span class="mobile-card-label">Año</span><span>$100-210</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-5 font-extrabold text-navy"><span class="mobile-card-label">Estado</span><span>🟡 Aceptable</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Edad</span><span>10-15 años</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Mes</span><span>$35-60</span></td>
+                <td class="px-6 py-5 font-bold"><span class="mobile-card-label">Año</span><span>$250-420</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-5 font-extrabold text-navy"><span class="mobile-card-label">Estado</span><span>🟠 Deteriorado</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Edad</span><span>15-20 años</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Mes</span><span>$60-110</span></td>
+                <td class="px-6 py-5 font-bold"><span class="mobile-card-label">Año</span><span>$420-770</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-5 font-extrabold text-navy"><span class="mobile-card-label">Estado</span><span>🔴 Crítico</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Edad</span><span>20-25 años</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Mes</span><span>$110-180</span></td>
+                <td class="px-6 py-5 font-bold"><span class="mobile-card-label">Año</span><span>$770-1,260</span></td>
+              </tr>
+              <tr>
+                <td class="px-6 py-5 font-extrabold text-navy"><span class="mobile-card-label">Estado</span><span>⚫ Comprometido</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Edad</span><span>con goteras</span></td>
+                <td class="px-6 py-5"><span class="mobile-card-label">Mes</span><span>$180+</span></td>
+                <td class="px-6 py-5 font-bold"><span class="mobile-card-label">Año</span><span>$1,260-1,960+</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8 text-center">
+          <a href="#agendar" class="focus-ring inline-flex min-h-12 items-center justify-center rounded-md bg-action px-6 text-base font-extrabold text-white transition hover:scale-[1.02] hover:bg-[#e95d2d]">
+            Mide el tuyo gratis →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPOUND DAMAGE SECTION -->
+    <section class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+            Una Grieta de $500 Hoy se Convierte en $25,000 en 4 Años
+          </h2>
+          <p class="mt-4 text-lg leading-8 text-slate-600">
+            Edmonton tiene más de 120 ciclos de congelamiento y deshielo al año. Cada uno expande el daño. La grieta no se queda quieta.
+          </p>
+        </div>
+
+        <div class="mt-12 reveal">
+          <div class="hidden items-center justify-between gap-3 md:flex">
+            <div class="flex-1 rounded-lg border border-slate-200 bg-white p-5 text-center shadow-soft">
+              <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-500">Hoy</p>
+              <p class="mt-2 text-2xl font-extrabold text-navy">$500</p>
+            </div>
+            <span class="text-2xl font-extrabold text-action">→</span>
+            <div class="flex-1 rounded-lg border border-slate-200 bg-white p-5 text-center shadow-soft">
+              <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-500">Año 1</p>
+              <p class="mt-2 text-2xl font-extrabold text-navy">$1,500</p>
+            </div>
+            <span class="text-2xl font-extrabold text-action">→</span>
+            <div class="flex-1 rounded-lg border border-slate-200 bg-white p-5 text-center shadow-soft">
+              <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-500">Año 2</p>
+              <p class="mt-2 text-2xl font-extrabold text-navy">$4,500</p>
+            </div>
+            <span class="text-2xl font-extrabold text-action">→</span>
+            <div class="flex-1 rounded-lg border border-slate-200 bg-white p-5 text-center shadow-soft">
+              <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-500">Año 3</p>
+              <p class="mt-2 text-2xl font-extrabold text-navy">$10,000</p>
+            </div>
+            <span class="text-2xl font-extrabold text-action">→</span>
+            <div class="flex-1 rounded-lg border-2 border-action bg-action/8 p-5 text-center shadow-soft">
+              <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-action">Año 4+</p>
+              <p class="mt-2 text-2xl font-extrabold text-navy">$25,000+</p>
+            </div>
+          </div>
+
+          <div class="grid gap-3 md:hidden">
+            <div class="rounded-lg border border-slate-200 bg-white p-5 shadow-soft"><span class="font-extrabold text-navy">HOY:</span> $500</div>
+            <div class="rounded-lg border border-slate-200 bg-white p-5 shadow-soft"><span class="font-extrabold text-navy">AÑO 1:</span> $1,500</div>
+            <div class="rounded-lg border border-slate-200 bg-white p-5 shadow-soft"><span class="font-extrabold text-navy">AÑO 2:</span> $4,500</div>
+            <div class="rounded-lg border border-slate-200 bg-white p-5 shadow-soft"><span class="font-extrabold text-navy">AÑO 3:</span> $10,000</div>
+            <div class="rounded-lg border-2 border-action bg-action/8 p-5 shadow-soft"><span class="font-extrabold text-action">AÑO 4+:</span> $25,000+</div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <a href="#agendar" class="focus-ring inline-flex min-h-12 items-center justify-center rounded-md bg-navy px-6 text-base font-extrabold text-white transition hover:scale-[1.02] hover:bg-[#173a63]">
+            Detenlo antes de que crezca →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHEPHERD'S CARE SOCIAL PROOF SECTION -->
+    <section class="bg-navy py-16 text-white sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div class="reveal">
+            <!-- IMAGEN: aerial de Shepherd's Care - Kensington Village, 1600x900, WebP -->
+            <div class="relative aspect-[16/10] overflow-hidden rounded-lg border border-white/12 bg-slate-900 shadow-premium">
+              <img
+                src="assets/shepherds-care-kensington-aerial.webp"
+                alt="Vista aérea de Shepherd's Care Foundation Kensington Village"
+                class="h-full w-full object-cover"
+                loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+              <div class="hidden h-full w-full items-center justify-center bg-[línear-gradient(135deg,#0F2A4A,#1F2937)] p-8 text-center">
+                <p class="max-w-md text-lg font-extrabold text-white/90">Imagen pendiente: Shepherd's Care Foundation - Kensington Village</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-warning">Prueba social estrella</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Reemplazamos el Techo de Shepherd's Care Foundation en 4 Días. Sin Afectar a un Solo Residente.
+            </h2>
+            <ul class="mt-7 space-y-4 text-lg leading-8 text-white/88">
+              <li>✅ Techo central completo reemplazado</li>
+              <li>✅ Reparación de tejas en edificios circundantes</li>
+              <li>✅ Cero interrupción a residentes adultos mayores</li>
+              <li>✅ Estándares institucionales de compliance</li>
+            </ul>
+            <blockquote class="mt-8 rounded-lg border-l-4 border-warning bg-white/8 p-5 text-lg font-bold leading-8 text-white">
+              "Si Xact-Vu maneja una residencia de adultos mayores con cero interrupción, tu casa está en manos seguras."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER STACK -->
+    <section class="bg-[#071B31] py-16 text-white sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-action">Oferta principal</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+            Tu Visita de Inspección Pro — Valorada en $797. Gratis.
+          </h2>
+          <p class="mt-4 text-lg leading-8 text-white/72">
+            Ves tu techo desde arriba, por temperatura y por riesgo real. Luego decides con calma.
+          </p>
+        </div>
+
+        <div class="mt-11 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal rounded-lg border border-white/12 bg-white/8 p-6">
+            <div class="text-3xl" aria-hidden="true">🚁</div>
+            <h3 class="mt-4 text-xl font-extrabold">Vuelo de Drone Aereo Profesional</h3>
+            <p class="mt-2 text-white/70">Inspección visual completa sin subirte al techo.</p>
+            <p class="mt-4 font-extrabold text-warning">$147</p>
+          </article>
+          <article class="reveal rounded-lg border border-white/12 bg-white/8 p-6">
+            <div class="text-3xl" aria-hidden="true">🔥</div>
+            <h3 class="mt-4 text-xl font-extrabold">Termografía FLIR en Vivo</h3>
+            <p class="mt-2 text-white/70">Detecta pérdida de calor y zonas comprometidas.</p>
+            <p class="mt-4 font-extrabold text-warning">$297</p>
+          </article>
+          <article class="reveal rounded-lg border border-white/12 bg-white/8 p-6">
+            <div class="text-3xl" aria-hidden="true">❄️</div>
+            <h3 class="mt-4 text-xl font-extrabold">Pronóstico de Inviernos Restantes</h3>
+            <p class="mt-2 text-white/70">Estimación práctica antes de que el riesgo suba.</p>
+            <p class="mt-4 font-extrabold text-warning">$97</p>
+          </article>
+          <article class="reveal rounded-lg border border-white/12 bg-white/8 p-6">
+            <div class="text-3xl" aria-hidden="true">📋</div>
+            <h3 class="mt-4 text-xl font-extrabold">Reporte PDF de 30 Puntos</h3>
+            <p class="mt-2 text-white/70">Entregado en 48 horas con hallazgos claros.</p>
+            <p class="mt-4 font-extrabold text-warning">$97</p>
+          </article>
+          <article class="reveal rounded-lg border border-white/12 bg-white/8 p-6">
+            <div class="text-3xl" aria-hidden="true">💰</div>
+            <h3 class="mt-4 text-xl font-extrabold">Cálculo de Heat Loss Personalizado</h3>
+            <p class="mt-2 text-white/70">Cuánto te podria costar tu techo cada mes.</p>
+            <p class="mt-4 font-extrabold text-warning">$97</p>
+          </article>
+          <article class="reveal rounded-lg border border-white/12 bg-white/8 p-6">
+            <div class="text-3xl" aria-hidden="true">🛡️</div>
+            <h3 class="mt-4 text-xl font-extrabold">Plan de Acción Personalizado</h3>
+            <p class="mt-2 text-white/70">Solo si lo pides. Sin presión de venta.</p>
+            <p class="mt-4 font-extrabold text-warning">$97</p>
+          </article>
+        </div>
+
+        <div class="mx-auto mt-10 max-w-xl rounded-lg border border-white/12 bg-white p-6 text-navy shadow-premium reveal">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-4 text-lg">
+            <span class="font-extrabold">VALOR TOTAL:</span>
+            <span class="font-extrabold">$832</span>
+          </div>
+          <div class="flex items-center justify-between pt-4 text-2xl">
+            <span class="font-extrabold">PRECIO PARA TI:</span>
+            <span class="font-extrabold text-success">$0</span>
+          </div>
+        </div>
+
+        <div class="mt-7 text-center reveal">
+          <span class="inline-flex rounded-full border border-warning/40 bg-warning/12 px-4 py-2 text-sm font-extrabold text-warning">
+            5 visitas esta semana · Sin presión de venta
+          </span>
+          <div class="mt-6">
+            <a href="#agendar" class="focus-ring inline-flex min-h-16 w-full max-w-lg items-center justify-center rounded-md bg-action px-6 text-center text-lg font-extrabold text-white transition hover:scale-[1.02] hover:bg-[#e95d2d] cta-shadow">
+              Asegurar Mi Visita Gratis ($797 de Valor)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY XACT-VU SECTION -->
+    <section class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">Por Qué Elegir Xact-Vu</h2>
+          <p class="mt-4 text-lg leading-8 text-slate-600">
+            Rapidez, claridad y respaldo para hogares que no pueden jugar con el próximo invierno.
+          </p>
+        </div>
+
+        <div class="mt-11 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="text-3xl" aria-hidden="true">⚡</div>
+            <h3 class="mt-4 text-lg font-extrabold text-navy">Entrega en 4 Días</h3>
+            <p class="mt-2 leading-7 text-slate-600">No tres semanas como el resto. Techos pequeños pueden completarse en 1 dia.</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="text-3xl" aria-hidden="true">🛡️</div>
+            <h3 class="mt-4 text-lg font-extrabold text-navy">Garantía Escrita de 1 Año</h3>
+            <p class="mt-2 leading-7 text-slate-600">Documentada, firmada y facil de entender antes de iniciar el trabajo.</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="text-3xl" aria-hidden="true">💳</div>
+            <h3 class="mt-4 text-lg font-extrabold text-navy">Financiamiento hasta $110K</h3>
+            <p class="mt-2 leading-7 text-slate-600">Opciones semanales, quincenales o mensuales para cuidar tu flujo de caja.</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="text-3xl" aria-hidden="true">🏆</div>
+            <h3 class="mt-4 text-lg font-extrabold text-navy">Confianza Institucional</h3>
+            <p class="mt-2 leading-7 text-slate-600">Experiencia probada en Shepherd's Care Foundation, con estándares de compliance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="bg-soft py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">Cómo Funciona</h2>
+          <p class="mt-4 text-lg font-bold text-slate-700">
+            Sin venta agresiva. Sin llamadas insistentes. Sin compromiso.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-4">
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-navy text-lg font-extrabold text-white">1</div>
+            <h3 class="mt-5 text-lg font-extrabold text-navy">Llenas el formulario</h3>
+            <p class="mt-2 text-slate-600">60 segúndos para pedir tu cupo.</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-navy text-lg font-extrabold text-white">2</div>
+            <h3 class="mt-5 text-lg font-extrabold text-navy">Agendamos tu visita</h3>
+            <p class="mt-2 text-slate-600">Dentro de 48 horas confirmamos horario.</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-navy text-lg font-extrabold text-white">3</div>
+            <h3 class="mt-5 text-lg font-extrabold text-navy">Llegamos con drone + FLIR</h3>
+            <p class="mt-2 text-slate-600">90 minutos en sitio, con revision clara.</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-action text-lg font-extrabold text-white">4</div>
+            <h3 class="mt-5 text-lg font-extrabold text-navy">Recibes tu reporte</h3>
+            <p class="mt-2 text-slate-600">En 48 horas, sin presión de venta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINANCING SECTION -->
+    <section class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-success">Financiamiento flexible</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+            No Toques Tus Ahorros. Paga Como Te Llega el Dinero.
+          </h2>
+        </div>
+
+        <div class="mt-11 grid gap-5 md:grid-cols-3">
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 text-center shadow-soft">
+            <h3 class="text-2xl font-extrabold text-navy">Semanal</h3>
+            <p class="mt-4 text-3xl font-extrabold text-action">Desde $X/semana</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 text-center shadow-soft">
+            <h3 class="text-2xl font-extrabold text-navy">Quincenal</h3>
+            <p class="mt-4 text-3xl font-extrabold text-action">Desde $X/quincena</p>
+          </article>
+          <article class="reveal rounded-lg border border-slate-200 bg-white p-6 text-center shadow-soft">
+            <h3 class="text-2xl font-extrabold text-navy">Mensual</h3>
+            <p class="mt-4 text-3xl font-extrabold text-action">Desde $X/mes</p>
+          </article>
+        </div>
+
+        <p class="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-slate-500 reveal">
+          Anticipo desde $3,000. Aprobación rápida. Sin penalidad por pago anticipado. Edita los valores $X cuando tengas las cuotas finales.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="bg-soft py-16 sm:py-20">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center reveal">
+          <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">Preguntas Frecuentes</h2>
+          <p class="mt-4 text-lg text-slate-600">Respuestas directas antes de pedir tu visita.</p>
+        </div>
+
+        <div class="mt-10 space-y-3 reveal">
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="true">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="true">
+              <span class="font-extrabold text-navy">¿Cuánto dura la visita de inspección?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">Normalmente dura unos 90 minutos en sitio. Revisamos el techo con drone, hacemos lectura termografica FLIR y te explicamos los hallazgos principales de forma clara.</p>
+            </div>
+          </article>
+
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="false">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="false">
+              <span class="font-extrabold text-navy">¿Me van a tratar de vender algo en la visita?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">No hacemos venta agresiva. Si encontramos algo importante, te lo mostramos y solo hablamos de opciones si tú las pides.</p>
+            </div>
+          </article>
+
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="false">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="false">
+              <span class="font-extrabold text-navy">¿Tengo que comprometerme a algo?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">No. La visita es gratuita, sin compromiso y está diseñada para darte información útil antes de tomar una decisión.</p>
+            </div>
+          </article>
+
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="false">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="false">
+              <span class="font-extrabold text-navy">¿Qué pasa si mi techo está bien?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">Te lo diremos. Si no hay urgencia, tu reporte te servira como línea base para monitorear el techo antes de los próximos inviernos.</p>
+            </div>
+          </article>
+
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="false">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="false">
+              <span class="font-extrabold text-navy">¿Cuánto demoran reemplazando un techo?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">La mayoría de proyectos se entrega en 1 a 4 días, según tamaño y complejidad. Un techo pequeño puede completarse en 1 dia si las condiciones lo permiten.</p>
+            </div>
+          </article>
+
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="false">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="false">
+              <span class="font-extrabold text-navy">¿Cómo funciona el financiamiento?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">Hay financiamiento disponible hasta $110,000 CAD, con frecuencia semanal, quincenal o mensual. La aprobación depende del perfil y del proyecto.</p>
+            </div>
+          </article>
+
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="false">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="false">
+              <span class="font-extrabold text-navy">¿Qué áreas sirven?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">Servimos Edmonton, Sherwood Park, St. Albert, Spruce Grove, Beaumont, Leduc, Fort Saskatchewan y Barrhead. Si estás cerca, escribe tu dirección y la confirmamos.</p>
+            </div>
+          </article>
+
+          <article class="faq-item rounded-lg border border-slate-200 bg-white shadow-soft" data-open="false">
+            <button class="faq-trigger focus-ring flex min-h-14 w-full items-center justify-between gap-4 rounded-lg px-5 py-4 text-left" type="button" aria-expanded="false">
+              <span class="font-extrabold text-navy">¿Tienen referencias verificables?</span>
+              <span class="faq-icon text-2xl font-light text-action transition" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel px-5">
+              <p class="pb-5 leading-7 text-slate-600">Si. La experiencia con Shepherd's Care Foundation - Kensington Village es una referencia institucional clave. También puedes solicitar referencias relevantes a tu tipo de proyecto.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONVERSION FORM SECTION -->
+    <section id="agendar" class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+          <div class="reveal">
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-action">Cupos limitados</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">Agenda Tu Visita Gratis Ahora</h2>
+            <p class="mt-4 text-lg leading-8 text-slate-600">5 visitas esta semana. Sin compromiso. Sin presión de venta.</p>
+
+            <div class="mt-8 rounded-lg border border-slate-200 bg-soft p-6">
+              <h3 class="text-lg font-extrabold text-navy">Tu visita incluye:</h3>
+              <ul class="mt-4 space-y-3 text-slate-700">
+                <li>Drone aéreo profesional</li>
+                <li>Termografía FLIR en vivo</li>
+                <li>Reporte PDF de 30 puntos en 48 horas</li>
+                <li>Cálculo de heat loss personalizado</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reveal rounded-lg border border-slate-200 bg-white p-5 shadow-premium sm:p-8">
+            <form id="leadForm" novalidate>
+              <!-- FORM WEBHOOK: reemplazar URL en JavaScript al final del archivo -->
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div class="sm:col-span-2">
+                  <label for="fullName" class="block text-sm font-extrabold text-navy">Nombre completo *</label>
+                  <input id="fullName" name="fullName" type="text" autocomplete="name" class="focus-ring mt-2 min-h-12 w-full rounded-md border border-slate-300 px-4 text-base" required>
+                  <p class="form-error mt-1 hidden text-sm font-semibold text-red-600" data-error-for="fullName"></p>
+                </div>
+
+                <div>
+                  <label for="phone" class="block text-sm font-extrabold text-navy">Teléfono *</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" class="focus-ring mt-2 min-h-12 w-full rounded-md border border-slate-300 px-4 text-base" required>
+                  <p class="form-error mt-1 hidden text-sm font-semibold text-red-600" data-error-for="phone"></p>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-extrabold text-navy">Correo electrónico *</label>
+                  <input id="email" name="email" type="email" autocomplete="email" class="focus-ring mt-2 min-h-12 w-full rounded-md border border-slate-300 px-4 text-base" required>
+                  <p class="form-error mt-1 hidden text-sm font-semibold text-red-600" data-error-for="email"></p>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label for="propertyAddress" class="block text-sm font-extrabold text-navy">Dirección de la propiedad *</label>
+                  <input id="propertyAddress" name="propertyAddress" type="text" autocomplete="street-address" class="focus-ring mt-2 min-h-12 w-full rounded-md border border-slate-300 px-4 text-base" required>
+                  <p class="form-error mt-1 hidden text-sm font-semibold text-red-600" data-error-for="propertyAddress"></p>
+                </div>
+
+                <div>
+                  <label for="roofAge" class="block text-sm font-extrabold text-navy">Edad aproximada de tu techo</label>
+                  <select id="roofAge" name="roofAge" class="focus-ring mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-4 text-base">
+                    <option value="">Selecciona una opción</option>
+                    <option>Menos de 5</option>
+                    <option>5-10</option>
+                    <option>10-15</option>
+                    <option>15-20</option>
+                    <option>20+</option>
+                    <option>No estoy seguro</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="bestTime" class="block text-sm font-extrabold text-navy">Mejor horario para visitarte</label>
+                  <select id="bestTime" name="bestTime" class="focus-ring mt-2 min-h-12 w-full rounded-md border border-slate-300 bg-white px-4 text-base">
+                    <option value="">Selecciona una opción</option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                    <option>Fin de semana</option>
+                  </select>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label for="notes" class="block text-sm font-extrabold text-navy">Algo que debamos saber</label>
+                  <textarea id="notes" name="notes" rows="4" class="focus-ring mt-2 w-full rounded-md border border-slate-300 px-4 py-3 text-base"></textarea>
+                </div>
+              </div>
+
+              <p class="mt-5 text-sm leading-6 text-slate-500">Tus datos están protegidos. No compartimos información con terceros.</p>
+
+              <button id="submitButton" type="submit" class="focus-ring mt-6 inline-flex min-h-14 w-full items-center justify-center rounded-md bg-action px-6 text-center text-base font-extrabold text-white transition hover:scale-[1.01] hover:bg-[#e95d2d] cta-shadow">
+                Asegurar Mi Visita Gratis ($797 de Valor)
+              </button>
+
+              <p id="formStatus" class="mt-4 hidden rounded-md p-4 text-sm font-bold" role="status" aria-live="polite"></p>
+            </form>
+
+            <div id="successMessage" class="hidden rounded-lg border border-success/20 bg-success/10 p-6 text-center">
+              <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-success text-xl font-extrabold text-white">✓</div>
+              <h3 class="mt-4 text-2xl font-extrabold text-navy">¡Listo!</h3>
+              <p class="mt-3 leading-7 text-slate-700">Te contactaremos en menos de 24 horas para confirmar la fecha de tu visita.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL TRUST SECTION -->
+    <section class="bg-soft py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div class="reveal">
+            <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">Confianza Local en Edmonton y Alrededores</h2>
+            <div class="mt-7 grid gap-3 sm:grid-cols-2">
+              <div class="rounded-lg border border-slate-200 bg-white p-4 font-extrabold text-navy shadow-soft">Licencia Alberta</div>
+              <div class="rounded-lg border border-slate-200 bg-white p-4 font-extrabold text-navy shadow-soft">WCB Cleared</div>
+              <div class="rounded-lg border border-slate-200 bg-white p-4 font-extrabold text-navy shadow-soft">BBB</div>
+              <div class="rounded-lg border border-slate-200 bg-white p-4 font-extrabold text-navy shadow-soft">Google Reviews 5★</div>
+            </div>
+            <div class="mt-8">
+              <p class="text-lg font-bold text-slate-700">¿Prefieres hablar? Llama al</p>
+              <a href="tel:+17800000000" data-phone-link class="focus-ring mt-2 inline-flex text-3xl font-extrabold text-action transition hover:text-navy">(780) 000-0000</a>
+            </div>
+          </div>
+
+          <div class="reveal rounded-lg border border-slate-200 bg-white p-6 shadow-premium">
+            <!-- IMAGEN: mapa de áreas servidas, opcional, WebP o PNG -->
+            <div class="flex aspect-[4/3] items-center justify-center rounded-lg border border-dashed border-slate-300 bg-soft p-6 text-center">
+              <div>
+                <p class="text-lg font-extrabold text-navy">Mapa de áreas servidas</p>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Edmonton · Sherwood Park · St. Albert · Spruce Grove · Beaumont · Leduc · Fort Saskatchewan · Barrhead</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy pb-24 pt-12 text-white md:pb-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 md:grid-cols-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-white text-sm font-extrabold text-navy">XV</span>
+            <span class="text-lg font-extrabold">XACT-VU</span>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-white/70">Construction & Restoration para roofing residencial e institucional en Edmonton.</p>
+        </div>
+
+        <div>
+          <h3 class="font-extrabold">Contacto</h3>
+          <p class="mt-3 text-sm leading-6 text-white/70">Dirección física: [Reemplazar dirección]</p>
+          <a href="tel:+17800000000" data-phone-link class="mt-2 block text-sm font-bold text-white">(780) 000-0000</a>
+          <a href="mailto:info@xact-vu.com" class="mt-2 block text-sm font-bold text-white">info@xact-vu.com</a>
+        </div>
+
+        <div>
+          <h3 class="font-extrabold">Horario</h3>
+          <p class="mt-3 text-sm leading-6 text-white/70">Lunes a viernes: 8:00 AM - 6:00 PM</p>
+          <p class="text-sm leading-6 text-white/70">Sábado: 9:00 AM - 3:00 PM</p>
+          <p class="text-sm leading-6 text-white/70">Emergencias: según disponibilidad</p>
+        </div>
+
+        <div>
+          <h3 class="font-extrabold">Legal</h3>
+          <a href="#" class="mt-3 block text-sm text-white/70 transition hover:text-white">Política de privacidad</a>
+          <a href="#" class="mt-2 block text-sm text-white/70 transition hover:text-white">Términos</a>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-white/12 pt-6 text-sm text-white/60">
+        Copyright © 2026 Xact-Vu Construction & Restoration. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE CTA BAR -->
+  <div class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white p-3 shadow-[0_-10px_30px_rgba(15,42,74,0.12)] md:hidden">
+    <div class="grid grid-cols-[0.42fr_0.58fr] gap-3">
+      <a href="tel:+17800000000" data-phone-link class="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-navy/20 text-sm font-extrabold text-navy" aria-label="Llamar a Xact-Vu">
+        <span aria-hidden="true">📞</span> Llamar
+      </a>
+      <a href="#agendar" class="focus-ring inline-flex min-h-12 items-center justify-center rounded-md bg-action px-3 text-center text-sm font-extrabold text-white">
+        Agendar Visita Gratis
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // EDITAR PLACEHOLDER: reemplaza esta URL por tu webhook real de Formspree, Make.com, Zapier o CRM.
+    const LEAD_WEBHOOK_URL = 'https://YOUR-WEBHOOK-URL.com/leads';
+
+    const safeFbq = (...args) => {
+      if (typeof window.fbq === 'function') {
+        window.fbq(...args);
+      }
+    };
+
+    document.querySelectorAll('[data-phone-link]').forEach((link) => {
+      link.addEventListener('click', () => safeFbq('track', 'Contact'));
+    });
+
+    const revealElements = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach((element) => observer.observe(element));
+    } else {
+      revealElements.forEach((element) => element.classList.add('is-visible'));
+    }
+
+    document.querySelectorAll('.faq-trigger').forEach((button) => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.faq-item');
+        const isOpen = item.dataset.open === 'true';
+        item.dataset.open = String(!isOpen);
+        button.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    const form = document.getElementById('leadForm');
+    const submitButton = document.getElementById('submitButton');
+    const statusBox = document.getElementById('formStatus');
+    const successMessage = document.getElementById('successMessage');
+
+    const fields = {
+      fullName: document.getElementById('fullName'),
+      phone: document.getElementById('phone'),
+      email: document.getElementById('email'),
+      propertyAddress: document.getElementById('propertyAddress')
+    };
+
+    const setError = (fieldName, message) => {
+      const field = fields[fieldName];
+      const error = document.querySelector(`[data-error-for="${fieldName}"]`);
+      if (!field || !error) return;
+      field.setAttribute('aria-invalid', message ? 'true' : 'false');
+      error.textContent = message;
+      error.classList.toggle('hidden', !message);
+    };
+
+    const validateForm = () => {
+      let isValid = true;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneDigits = fields.phone.value.replace(/\D/g, '');
+
+      Object.keys(fields).forEach((name) => setError(name, ''));
+
+      if (fields.fullName.value.trim().length < 2) {
+        setError('fullName', 'Escribe tu nombre completo.');
+        isValid = false;
+      }
+
+      if (phoneDigits.length < 10) {
+        setError('phone', 'Escribe un teléfono válido con código de área.');
+        isValid = false;
+      }
+
+      if (!emailPattern.test(fields.email.value.trim())) {
+        setError('email', 'Escribe un correo electrónico válido.');
+        isValid = false;
+      }
+
+      if (fields.propertyAddress.value.trim().length < 6) {
+        setError('propertyAddress', 'Escribe la dirección de la propiedad.');
+        isValid = false;
+      }
+
+      return isValid;
+    };
+
+    const showStatus = (message, type = 'error') => {
+      statusBox.textContent = message;
+      statusBox.className = `mt-4 rounded-md p-4 text-sm font-bold ${type === 'error' ? 'bg-red-50 text-red-700' : 'bg-success/10 text-success'}`;
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      if (!validateForm()) {
+        showStatus('Revisa los campos marcados antes de enviar.');
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Enviando...';
+      statusBox.classList.add('hidden');
+
+      const payload = {
+        fullName: document.getElementById('fullName').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        propertyAddress: document.getElementById('propertyAddress').value.trim(),
+        roofAge: document.getElementById('roofAge').value,
+        bestTime: document.getElementById('bestTime').value,
+        notes: document.getElementById('notes').value.trim(),
+        source: 'Meta Ads Landing - Visita de Inspección Pro',
+        submittedAt: new Date().toISOString()
+      };
+
+      try {
+        const response = await fetch(LEAD_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          throw new Error('Webhook no disponible');
+        }
+
+        safeFbq('track', 'Lead');
+        form.classList.add('hidden');
+        successMessage.classList.remove('hidden');
+      } catch (error) {
+        showStatus('No pudimos enviar el formulario. Intenta de nuevo o llama al (780) 000-0000.');
+        submitButton.disabled = false;
+        submitButton.textContent = 'Asegurar Mi Visita Gratis ($797 de Valor)';
+      }
+    });
+  </script>
+</body>
+</html>
